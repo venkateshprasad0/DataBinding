@@ -1,0 +1,10 @@
+<h3>Select an Image from dropdownOption</h3>
+<select class="form-select" aria-label="Default select example"
+ [(ngModel)]='ngDropdown' name="dropdownOption" id="dropdownOption" class='form-control' style="width: 450px;">
+  <option selected>Select an Image</option>
+  <option  [value]="image1" alt="Image">Image1</option>
+  <option  [value]="image2" alt="image">Image2</option>
+  <option  [value]="image3" alt="image">Image3</option>
+</select>
+<br>
+<img [src]= 'ngDropdown' height="300" width="450" class="rounded float-right"/>
